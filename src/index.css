@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.stopwatch {
+  background: #1e293b;
+  padding: 2rem;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  min-width: 400px;
+}
+
+.display {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f8fafc;
+  margin-bottom: 2rem;
+  font-family: "Courier New", monospace;
+  letter-spacing: 2px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.controls button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.controls button:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.startBtn {
+  background-color: #22c55e;
+}
+
+.startBtn:hover {
+  background-color: #16a34a;
+}
+
+.stopBtn {
+  background-color: #ef4444;
+}
+
+.stopBtn:hover {
+  background-color: #dc2626;
+}
+
+.resetBtn {
+  background-color: #f59e0b;
+}
+
+.resetBtn:hover {
+  background-color: #d97706;
+}
+
+@media (max-width: 500px) {
+  .stopwatch {
+    min-width: 90%;
+    padding: 1.5rem;
+  }
+
+  .display {
+    font-size: 2.5rem;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .controls button {
+    width: 100%;
+  }
+}
