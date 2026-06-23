@@ -174,7 +174,7 @@ Means:
 Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/react-stopwatch.git
+git clone https://github.com/mdk4if/reactStopwatch.git
 ```
 
 Navigate into the project:
